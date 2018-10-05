@@ -1,0 +1,69 @@
+<form [formGroup]="form" id="form">
+    <mat-form-field>
+        <input
+            matInput
+            placeholder="Enter Origin City"
+            formControlName="origin"
+            name="origin"
+            [(ngModel)]="origin"
+            id="origin"
+            required></mat-form-field>
+        <br>
+            <mat-form-field>
+                <input
+                    matInput
+                    placeholder="Enter Destination City"
+                    formControlName="destination"
+                    name="destination"
+                    [(ngModel)]="destination"
+                    id="origin"
+                    required></mat-form-field>
+                <br>
+                    <!-- Date -->
+                    <mat-form-field>
+                        <input
+                            matInput
+                            [matDatepicker]="pickerDeparture"
+                            placeholder="Departure date"
+                            formControlName="depDate"
+                            name="depDate"
+                            [(ngModel)]="depDate"
+                            id="depDate"
+                            [min]="todayDate"
+                            required>
+                            <mat-datepicker-toggle matSuffix [for]="pickerDeparture"></mat-datepicker-toggle>
+                            <mat-datepicker #pickerDeparture></mat-datepicker>
+                        </mat-form-field>
+                        <br>
+
+                            <br>
+                                <mat-form-field>
+
+                                    <input matInput type="number" placeholder="Passengers"
+                                    [(ngModel)]="passengers" formControlName="passengers"
+                                    name="passengers" id="passengers" required>
+
+                                </mat-form-field>
+                                <br>
+                                    <div>
+                                        Refine Flight Search
+                                        <br>
+                                            <mat-slider
+                                                thumbLabel
+                                                tickInterval="1000"
+                                                min="0"
+                                                max="10000"
+                                                formControlName="price"
+                                                name="price"
+                                                [(ngModel)]="price"
+                                                id="price"
+                                                ></mat-slider>
+                                        </div>
+                                        <p>
+                                            <button
+                                                mat-raised-button
+                                                color="primary"
+                                                type="submit"
+                                                (click)="oneWaySearch()" [disabled]="!form.valid">Search</button>
+                                        </p>
+                                    </form>

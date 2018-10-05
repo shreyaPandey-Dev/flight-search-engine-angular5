@@ -1,0 +1,108 @@
+
+<mat-card class="example-card" *ngIf="showHome"  id="contentBackgroundcontentBackground" >
+    <mat-card-header>
+      <mat-card-title >
+      <h1>
+       Sorry! Flights for this route are not available at this moment !!!
+      </h1>
+      </mat-card-title>
+  </mat-card-header>
+    <mat-card-content >
+
+    </mat-card-content>
+
+  </mat-card>
+<mat-card class="example-card" *ngIf="loading"  id="contentBackgroundcontentBackground" >
+  <mat-card-header>
+    <mat-card-title >
+    <h1>
+      Search for flights!!!!
+    </h1>
+    </mat-card-title>
+</mat-card-header>
+  <mat-card-content >
+
+  </mat-card-content>
+
+</mat-card>
+
+<mat-card id="headerCard" class="z-depth-1" *ngIf="!loading" >
+  <mat-card-header>
+      <mat-card-title></mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+      <div *ngIf="selectedTab === 0">
+          <h2>{{headerOrigin}} > {{headerDestination}}</h2>
+      </div>
+      <div *ngIf="selectedTab === 1">
+          <h2>{{headerOrigin}} > {{headerDestination}} > {{headerOrigin}}
+          </h2>
+      </div>
+      <span></span>
+      <div id="timeDiv">
+          <div *ngIf="selectedTab === 0">
+           <b> Depart: {{headerdepDate  | date: 'dd/MM/yyyy'}}</b>
+          </div>
+              <br>
+                  <div *ngIf="selectedTab === 1">
+                   <b> Depart: {{headerdepDate  | date: 'dd/MM/yyyy'}}
+                      Return : {{headerReturnDate  | date: 'dd/MM/yyyy'}}
+                    </b>
+                  </div>
+
+          </div>
+      </mat-card-content>
+  </mat-card>
+  <mat-card class="flightDetailsCard" >
+      <mat-card-header *ngIf="!loading">
+          <a target="_blank">
+              <img id="logo" [src]="flights[8]"></a>
+              <mat-card-title>
+                  <h2>
+                      Rs.
+                      {{flights[7]}}
+                  </h2>
+              </mat-card-title>
+          </mat-card-header>
+
+          <mat-card-content id="content" *ngIf="!loading" >
+              <mat-card-subtitle>
+                  <div id="OneWay" Style="display: inline-block;">
+                    {{flights[1]}}
+                      <br>
+                      {{flights[2]}}
+                          >
+                          {{flights[3]}}
+                          <br>
+                              Depart :
+                              {{flights[4]}}
+                              <br>
+                                  Arrive :
+                                  {{flights[5]}}
+                                  <br></div>
+
+                                  <div id="TwoWay" Style="display: inline-block;" *ngIf="selectedTab === 1">
+                                    {{flights[1]}}
+                                      <br>
+                                      {{flights[2]}}
+                                          >
+                                          {{flights[3]}}
+                                          <br>
+                                              Depart :
+                                              {{flights[6]}}
+                                              <br>
+                                                  Arrive :
+                                                  {{flights[7]}}
+                                                  <br></div>
+
+                                              </mat-card-subtitle>
+                                              <p>
+                                                  <button mat-raised-button color="primary" id="bookButton">
+                                                      Book this flight
+                                                  </button>
+
+                                              </p>
+                                          </mat-card-content>
+                                          <mat-card-actions></mat-card-actions>
+                                      </mat-card>
+

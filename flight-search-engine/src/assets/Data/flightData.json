@@ -1,0 +1,172 @@
+{
+  "flight_data": [
+    {
+      "airline": "GoAir",
+      "flight_number": "G8 804",
+      "from": "New Delhi",
+      "to": "Kolkata",
+      "departure": "18:00",
+      "arrival": "20:00",
+      "duration": "2:00",
+      "cost": "3900",
+      "logo": "../../assets/images/goair.png",
+      "day": "monday"
+    },
+    {
+      "airline": "GoAir",
+      "flight_number": "G8 804",
+      "from": "Kolkata",
+      "to": "New Delhi",
+      "departure": "22:00",
+      "arrival": "24:00",
+      "duration": "2:00",
+      "cost": "3995",
+      "logo": "../../assets/images/goair.png",
+      "day": "monday"
+    },
+    {
+      "airline": "GoAir",
+      "flight_number": "G8-802",
+      "from": "New Delhi",
+      "to": "Mumbai",
+      "departure": "18:00",
+      "arrival": "20:00",
+      "duration": "2:00",
+      "cost": "5700",
+      "logo": "../../assets/images/goair.png",
+      "day": "tuesday"
+    },
+    {
+      "airline": "GoAir",
+      "flight_number": "G8-802",
+      "from": "Mumbai",
+      "to": "New Delhi",
+      "departure": "10:00",
+      "arrival": "12:00",
+      "duration": "2:00",
+      "cost": "5100",
+      "logo": "../../assets/images/goair.png",
+      "day": "tuesday"
+    },
+    {
+      "airline": "Vistara",
+      "flight_number": "UK-995",
+      "from": "New Delhi",
+      "to": "Mumbai",
+      "departure": "10:20",
+      "arrival": "12:30",
+      "duration": "2:10",
+      "cost": "5100",
+      "logo": "../../assets/images/vistara.jpg",
+      "day": "wednesday"
+    },
+    {
+      "airline": "Vistara",
+      "flight_number": "UK-995",
+      "from": "Mumbai",
+      "to": "New Delhi",
+      "departure": "13:20",
+      "arrival": "15:30",
+      "duration": "2:10",
+      "cost": "3100",
+      "logo": "../../assets/images/vistara.jpg",
+      "day": "wednesday"
+    },
+    {
+      "airline": "Air India",
+      "flight_number": "AI-678",
+      "from": "New Delhi",
+      "to": "Chennai",
+      "departure": "09:00",
+      "arrival": "11:10",
+      "duration": "2:10",
+      "cost": "3100",
+      "logo": "../../assets/images/airIndia.jpg",
+      "day": "thurday"
+    },
+    {
+      "airline": "Air India",
+      "flight_number": "AI-678",
+      "from": "Chennai",
+      "to": "New Delhi",
+      "departure": "19:00",
+      "arrival": "21:10",
+      "duration": "2:10",
+      "cost": "3100",
+      "logo": "../../assets/images/airIndia.jpg",
+      "day": "thurday"
+    },
+    {
+      "airline": "Spicejet",
+      "flight_number": "SG-153",
+      "from": "Bangalore",
+      "to": "Pune",
+      "departure": "18:00",
+      "arrival": "20:00",
+      "duration": "2:00",
+      "cost": "4500",
+      "logo": "../../assets/images/images.png",
+      "day": "friday"
+    },
+    {
+      "airline": "Spicejet",
+      "flight_number": "SG-153",
+      "from": "Pune",
+      "to": "Bangalore",
+      "departure": "09:00",
+      "arrival": "11:00",
+      "duration": "2:00",
+      "cost": "2700",
+      "logo": "../../assets/images/images.png",
+      "day": "friday"
+    },
+    {
+      "airline": "Air India",
+      "flight_number": "AI-315",
+      "from": "Kolkata",
+      "to": "Pune",
+      "departure": "18:00",
+      "arrival": "20:00",
+      "duration": "2:00",
+      "cost": "5700",
+      "logo": "../../assets/images/airIndia.jpg",
+      "day": "saturday"
+    },
+    {
+      "airline": "Air India",
+      "flight_number": "AI-315",
+      "from": "Pune",
+      "to": "Kolkata",
+      "departure": "08:00",
+      "arrival": "10:00",
+      "duration": "2:00",
+      "cost": "8700",
+      "logo": "../../assets/images/airIndia.jpg",
+      "day": "saturday"
+    },
+    {
+      "airline": "Jet Airways",
+      "flight_number": "9W-313",
+      "from": "Pune",
+      "to": "Mumbai",
+      "departure": "18:00",
+      "arrival": "18:40",
+      "duration": "0:40",
+      "cost": "2000",
+      "logo": "../../assets/images/jet.png",
+      "day": "sunday"
+    },
+    {
+      "airline": "Jet Airways",
+      "flight_number": "9W-313",
+      "from": "Mumbai",
+      "to": "Pune",
+      "departure": "06:00",
+      "arrival": "06:40",
+      "duration": "0:40",
+      "cost": "2850",
+      "logo": "../../assets/images/jet.png",
+      "day": "sunday"
+    }
+  ]
+}

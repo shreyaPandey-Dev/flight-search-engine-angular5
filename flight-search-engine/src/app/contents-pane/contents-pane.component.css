@@ -1,0 +1,47 @@
+#headerCard {
+    height: 13%;
+
+}
+#timeDiv {
+    padding-left: 75%;
+    margin-top: -30px;
+
+}
+#logo {
+    margin-left: 23vw;
+    height: 100px;
+    width: 200px;
+}
+
+#content {
+    margin-left: 1vw;
+}
+#bookButton {
+    margin-left: 56vw;
+}
+.mat-card-title {
+    width: 9vw;
+}
+#contentBackgroundcontentBackground{
+  background-image: url('../../assets/images/background.jpg');
+  min-height: 76vw;
+  min-width: 198vw;
+  margin: 0px;
+  padding: 0px;
+}
+.mat-card-title{
+  width:30vw;
+}
+h1{
+  font-family: Tahoma, Geneva, sans-serif;
+font-size: 25px;
+letter-spacing: 2px;
+word-spacing: 2px;
+color:antiquewhite;
+font-weight: normal;
+text-decoration: none;
+font-style: normal;
+font-variant: normal;
+text-transform: none;
+margin-left: 90%;
+}

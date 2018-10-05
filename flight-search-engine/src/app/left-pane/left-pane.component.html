@@ -1,0 +1,15 @@
+<mat-drawer-container class="example-container">
+    <mat-drawer mode="side" opened>
+        <mat-tab-group (focusChange)="tabChanged($event)">
+            <mat-tab label="One Way">
+                <app-one-way-form></app-one-way-form>
+            </mat-tab>
+            <mat-tab label="Round Trip">
+                <app-round-trip-form></app-round-trip-form>
+            </mat-tab>
+        </mat-tab-group>
+    </mat-drawer>
+    <mat-drawer-content>
+        <app-contents-pane></app-contents-pane>
+    </mat-drawer-content>
+</mat-drawer-container>
